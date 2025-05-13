@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import { Button } from './components/ui'
+import ThemeToggle from './components/ThemeToggle.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import { Button } from './components/ui'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <Button>Button</Button>
+        <ThemeToggle />
       </nav>
     </div>
   </header>
