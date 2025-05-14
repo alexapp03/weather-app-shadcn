@@ -1,31 +1,26 @@
 export interface MapboxFeature {
   id: string
   type: string
-  place_type: string[]
-  relevance: number
-  properties: {
-    accuracy?: string
-    mapbox_id?: string
-    wikidata?: string
-    [key: string]: any
-    name: string
-    name_preferred: string
-  }
-  text: string
-  place_name: string
-  center: [number, number] // [longitude, latitude]
   geometry: {
     type: string
     coordinates: [number, number] // [longitude, latitude]
   }
-  address?: string
-  context?: Array<{
-    id: string
+  properties: {
+    name: string
+    name_preferred: string
     text: string
-    wikidata?: string
-    [key: string]: any
-  }>
-  bbox?: [number, number, number, number]
+    place_name: string
+    center: [number, number] // [longitude, latitude]
+
+    full_address?: string
+    context?: Array<{
+      id: string
+      text: string
+      wikidata?: string
+      [key: string]: any
+    }>
+    bbox?: [number, number, number, number]
+  }
 }
 
 export interface MapboxForwardGeocodingResponse {
