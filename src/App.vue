@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import Header from './components/layout/Header.vue';
+import Header from './components/layout/Header.vue'
 </script>
 
 <template>
-  <Header></Header>
+  <Header class="mb-8"></Header>
   <RouterView />
 </template>
