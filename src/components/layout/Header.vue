@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 import ThemeToggle from '@/components/ThemeToggle.vue'
+import { Umbrella } from 'lucide-vue-next'
 </script>
 
 <template>
@@ -16,5 +17,8 @@ import ThemeToggle from '@/components/ThemeToggle.vue'
         <ThemeToggle />
       </div>
     </div>
+    <h1 class="text-3xl font-bold text-center my-8 flex justify-center">
+      <Umbrella class="me-4" :size="36" /> Weather App
+    </h1>
   </header>
 </template>

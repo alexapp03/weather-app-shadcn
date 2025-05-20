@@ -10,6 +10,7 @@ export interface MapboxFeature {
     name_preferred: string
     text: string
     place_name: string
+    place_formatted: string
     center: [number, number] // [longitude, latitude]
 
     full_address?: string
