@@ -102,7 +102,6 @@ function previewCity(item: MapboxFeature) {
     name: 'cityView',
     params: {
       city: item?.properties.name,
-      // city can be the same as state
       state: item?.properties.place_formatted,
     },
     query: {
